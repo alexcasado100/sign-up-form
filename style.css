@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(assets/boy-coding.jpg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  color: rgb(71, 180, 71);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+main .social-media {
+  display: flex;
+  align-content: center;
+}
+
+main .social-media a {
+  text-decoration: none;
+}
+
+main .social-media img {
+  width: 36px;
+  margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+  margin-left: 0;
+}
+
+main .alternative {
+  margin-top: 1rem;
+}
+
+main .alternative span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(71, 180, 71);
+  position: relative;
+}
+
+main .alternative span::before,
+main .alternative span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background-color: rgb(71, 180, 71);
+}
+
+main .alternative span::after {
+  left: 50px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form label {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: rgb(71, 180, 71);;
+}
+
+main form input {
+  background-color: transparent;
+  width: 300px;
+  height: 50px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  outline: none;
+  font-size: 1rem;
+  border: 1px solid rgb(71, 180, 71);
+  border-radius: 32px;
+}
+
+main form input[type="submit"] {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 4rem;
+  border: 1px solid rgb(71, 180, 71);
+  border-radius: 32px;
+  background-color: transparent;
+  color: rgb(71, 180, 71);
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+  background-color: rgb(71, 180, 71);
+  color: white;
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1700px) {
+  main form input {
+    background-color: white;
+  }
+
+  main form input[type="submit"] {
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  main {
+    width: 100vw;
+  }
+
+  main form input {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  main {
+    width: 100vh;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main form input {
+    width: 250px;
+    background-color: white;
+  }
+
+  main .alternative span::before,
+  main .alternative span::after {
+    width: 70px;
+  }
+}
